@@ -1,0 +1,76 @@
+#motSection {
+  height: 268px;
+  color: #fff;
+  background-image: url(bgimg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#motSection h1 {
+  font-family: "Playball";
+  font-size: 55.44px;
+  font-weight: 400;
+  line-height: 46.46px;
+  text-align: center;
+  padding-top: 132px;
+}
+#motSection h3 {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  margin-top: 19px;
+}
+#motSection .slbCon {
+  top: 242px;
+  position: absolute;
+}
+#motSection .selectorsButton {
+  border-radius: 15px;
+  width: 342px;
+  border: none;
+  background-color: #fff;
+  display: flex;
+  text-align: left;
+  justify-content: space-between;
+  padding: 16px;
+  margin-bottom: 12px;
+}
+#motSection .selectorsButton h4 {
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 20.29px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  margin-bottom: 4px;
+}
+#motSection .selectorsButton .desc {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: left;
+  color: #8b8b8f;
+}
+#motSection .selectorsButton .doc {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: left;
+  color: #037bff;
+  margin-top: 14px;
+}
+#motSection .selectorsButton .slcb {
+  padding: 6px 29px;
+  background-color: #037bff;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+}
+
+#genSection {
+  background-color: #e8e8e8;
+  height: 3430px;
+}/*# sourceMappingURL=Startpage.css.map */

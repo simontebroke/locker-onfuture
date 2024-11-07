@@ -1,0 +1,79 @@
+#motSection {
+  height: 268px;
+  color: #fff;
+  background-image: url(bgimg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h1 {
+    font-family: "Playball";
+    font-size: 55.44px;
+    font-weight: 400;
+    line-height: 46.46px;
+    text-align: center;
+    padding-top: 132px;
+  }
+  h3 {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    margin-top: 19px;
+  }
+  .slbCon {
+    top: 242px;
+    position: absolute;
+  }
+  .selectorsButton {
+    border-radius: 15px;
+    width: 342px;
+    border: none;
+    background-color: #fff;
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+    padding: 16px;
+    margin-bottom: 12px;
+
+    h4 {
+      font-size: 17px;
+      font-weight: 600;
+      line-height: 20.29px;
+      letter-spacing: 0.01em;
+      text-align: left;
+      margin-bottom: 4px;
+    }
+    .desc {
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 16px;
+      text-align: left;
+      color: #8b8b8f;
+    }
+
+    .doc {
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 16px;
+      text-align: left;
+      color: #037bff;
+      margin-top: 14px;
+    }
+
+    .slcb {
+      padding: 6px 29px;
+      background-color: #037bff;
+      color: #fff;
+      border: none;
+      border-radius: 50px;
+    }
+  }
+}
+
+#genSection {
+  background-color: #e8e8e8;
+  height: 3430px;
+}
