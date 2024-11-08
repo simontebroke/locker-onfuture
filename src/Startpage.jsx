@@ -1,5 +1,6 @@
 import "./Startpage.css";
 import { useState, useRef, useEffect } from "react";
+import { CSSTransition } from "react-transition-group";
 
 function Startpage() {
   // allows the convert button to change his color
@@ -8,10 +9,27 @@ function Startpage() {
   // pop up
 
   const [showModal, setShowModal] = useState(false);
+  const [isAnimating, setIsAnimating] = useState(false);
 
   useEffect(() => {
     document.body.style.overflow = showModal ? "hidden" : "auto";
   }, [showModal]);
+
+  const handleModalOpen = () => {
+    if (!isAnimating) {
+      setShowModal(true);
+      setIsAnimating(true);
+    }
+  };
+
+  const handleModalClose = () => {
+    setIsAnimating(true);
+    setShowModal(false);
+  };
+
+  const onAnimationEnd = () => {
+    setIsAnimating(false);
+  };
 
   // pop up
 
@@ -219,6 +237,18 @@ function Startpage() {
           <div className="modal">
             <div className="previewSec">
               <img src="/popupimg.png" alt="Preview" />
+              <svg
+                width="57"
+                height="9"
+                viewBox="0 0 57 9"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="4.5" cy="4.5" r="4.5" fill="#313132" />
+                <circle cx="28.5" cy="4.5" r="4.5" fill="#8F8E90" />
+                <circle cx="52.5" cy="4.5" r="4.5" fill="#8F8E90" />
+              </svg>
+
               <button
                 className="close-button"
                 onClick={() => setShowModal(false)}

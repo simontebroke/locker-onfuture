@@ -153,10 +153,19 @@ body {
   z-index: 20;
   transform: translateY(100%);
   animation: slide-up 0.3s ease-out forwards;
+  animation-fill-mode: forwards;
   border-radius: 12px 12px 0 0 !important;
   img {
     width: 281.4px;
     height: 203.47px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+  }
+  svg {
+    position: static;
+    bottom: 54px;
   }
 
   h1 {
@@ -223,6 +232,15 @@ body {
   }
   to {
     transform: translateY(0);
+  }
+}
+
+@keyframes slide-down {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(100%);
   }
 }
 
