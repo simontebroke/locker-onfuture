@@ -1,5 +1,5 @@
 import "./Startpage.css";
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 
 function Startpage() {
   // allows the convert button to change his color
@@ -61,6 +61,7 @@ function Startpage() {
           >
             <div>
               <h4>Design</h4>
+              <h5>Free</h5>
               <p className="desc">
                 Every kind of a Work Sheet is to think about the morning
                 tonight.
@@ -92,6 +93,7 @@ function Startpage() {
           >
             <div>
               <h4>Summary</h4>
+              <h5>Free</h5>
               <p className="desc">
                 Every kind of a Work Sheet is to think about the morning tonight
                 in Manhattan.
@@ -111,37 +113,14 @@ function Startpage() {
 
           <button
             className={`selectorsButton slb1 ${
-              uploadedFiles.worksheet.isActive ? "active" : ""
-            }`}
-            onClick={() => handleButtonClick("worksheet")}
-          >
-            <div>
-              <h4>Worksheet</h4>
-              <p className="desc">
-                Every kind of a Work Sheet is to think about the morning tonight
-                in Manhattan.
-              </p>
-              {uploadedFiles.worksheet.name && (
-                <p className="doc">{uploadedFiles.worksheet.name}</p>
-              )}
-            </div>
-            <button className="slcb">Upload</button>
-            <input
-              type="file"
-              ref={fileInputRefs.worksheet}
-              style={{ display: "none" }}
-              onChange={(e) => handleFileChange(e, "worksheet")}
-            />
-          </button>
-
-          <button
-            className={`selectorsButton slb1 ${
               uploadedFiles.presentation.isActive ? "active" : ""
             }`}
             onClick={() => handleButtonClick("presentation")}
           >
             <div>
               <h4>Presentation</h4>
+              <h5>Locker Pro</h5>
+
               <p className="desc">
                 Every kind of a Work Sheet is to think about the morning
                 tonight.
@@ -158,6 +137,32 @@ function Startpage() {
               onChange={(e) => handleFileChange(e, "presentation")}
             />
           </button>
+          <button
+            className={`selectorsButton slb1 ${
+              uploadedFiles.worksheet.isActive ? "active" : ""
+            }`}
+            onClick={() => handleButtonClick("worksheet")}
+          >
+            <div>
+              <h4>Worksheet</h4>
+              <h5>Locker Pro</h5>
+
+              <p className="desc">
+                Every kind of a Work Sheet is to think about the morning tonight
+                in Manhattan.
+              </p>
+              {uploadedFiles.worksheet.name && (
+                <p className="doc">{uploadedFiles.worksheet.name}</p>
+              )}
+            </div>
+            <button className="slcb">Upload</button>
+            <input
+              type="file"
+              ref={fileInputRefs.worksheet}
+              style={{ display: "none" }}
+              onChange={(e) => handleFileChange(e, "worksheet")}
+            />
+          </button>
         </div>
       </section>
       <section id="genSection">
@@ -168,6 +173,7 @@ function Startpage() {
             viewBox="0 0 18 18"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            style={{ marginRight: "5px" }}
           >
             <g clip-path="url(#clip0_405_2195)">
               <path
@@ -186,7 +192,7 @@ function Startpage() {
               </clipPath>
             </defs>
           </svg>{" "}
-          {""}Jetzt Umwandeln...
+          {""} Transform now...
         </button>
       </section>
     </>

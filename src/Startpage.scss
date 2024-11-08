@@ -6,7 +6,7 @@ body {
   height: 268px;
   color: #fff;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 41.13%, #000000 78.06%),
-    url("e.png");
+    url("wd.png");
 
   background-size: cover;
   background-repeat: no-repeat;
@@ -42,6 +42,17 @@ body {
     justify-content: space-between;
     padding: 16px;
     margin-bottom: 12px;
+    h5 {
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 16px;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+      margin-bottom: 4px;
+      margin-top: 1px;
+    }
+
     transition: all 250ms ease;
     &.active {
       outline: 2px solid #bb59fc;
@@ -52,7 +63,6 @@ body {
       line-height: 20.29px;
       letter-spacing: 0.01em;
       text-align: left;
-      margin-bottom: 4px;
       color: #000;
     }
     .desc {
@@ -99,12 +109,7 @@ body {
     width: 100vw;
     min-height: 55px;
     padding: 18px 0;
-    background: linear-gradient(
-      270deg,
-      #c5c0fe 9.06%,
-      #a89afc 44.16%,
-      #5243fb 100%
-    );
+    background: #dadbde;
     border: none;
     color: #fff;
     font-size: 15px;
@@ -116,12 +121,11 @@ body {
     text-decoration-skip-ink: none;
     transition: all 250ms ease;
     &.active {
-      background: radial-gradient(
-        circle at 100% 0%,
-        #ea994f 17.24%,
-        #e46f90 32.29%,
-        #cc6deb 50.99%,
-        #65b9f9 74.38%
+      background: linear-gradient(
+        270deg,
+        #c5c0fe 9.06%,
+        #a89afc 44.16%,
+        #5243fb 100%
       );
     }
   }
