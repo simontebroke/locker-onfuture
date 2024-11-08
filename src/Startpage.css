@@ -1,7 +1,11 @@
+body {
+  background-color: #e8e8e8;
+}
+
 #motSection {
   height: 268px;
   color: #fff;
-  background-image: url(bgimg.png);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 41.13%, #000000 78.06%), url("e.png");
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -10,19 +14,18 @@
 }
 #motSection h1 {
   font-family: "Playball";
-  font-size: 55.44px;
-  font-weight: 400;
   line-height: 46.46px;
   text-align: center;
-  padding-top: 132px;
+  padding-top: 157px;
+  font-family: Playball;
+  font-size: 25px;
+  font-weight: 400;
 }
 #motSection h3 {
   font-size: 17px;
   font-weight: 400;
-  line-height: 18px;
   letter-spacing: -0.02em;
   text-align: center;
-  margin-top: 19px;
 }
 #motSection .slbCon {
   top: 242px;
@@ -38,6 +41,10 @@
   justify-content: space-between;
   padding: 16px;
   margin-bottom: 12px;
+  transition: all 250ms ease;
+}
+#motSection .selectorsButton.active {
+  outline: 2px solid #bb59fc;
 }
 #motSection .selectorsButton h4 {
   font-size: 17px;
@@ -65,18 +72,36 @@
 }
 #motSection .selectorsButton .slcb {
   padding: 6px 29px;
-  background-color: #037bff;
+  background-color: #1d1d1f;
   color: #fff;
   border: none;
   border-radius: 50px;
   font-size: 13px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 16px;
   letter-spacing: 0.02em;
   text-align: center;
 }
 
-#genSection {
-  background-color: #e8e8e8;
-  height: 3430px;
+#genSection .convertButton {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  bottom: 0px;
+  width: 100vw;
+  min-height: 55px;
+  padding: 18px 0;
+  background: linear-gradient(270deg, #c5c0fe 9.06%, #a89afc 44.16%, #5243fb 100%);
+  border: none;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 18.8px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
 }/*# sourceMappingURL=Startpage.css.map */
