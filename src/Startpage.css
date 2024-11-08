@@ -30,7 +30,7 @@ body {
 #motSection .slbCon {
   top: 242px;
   position: absolute;
-  margin-bottom: 23px;
+  padding-bottom: 60px;
 }
 #motSection .selectorsButton {
   border-radius: 15px;
