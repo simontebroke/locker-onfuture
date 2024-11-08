@@ -247,13 +247,16 @@ function Startpage() {
                 </svg>
               </button>
             </div>
-            <h1>
-              Your document <br /> is ready.
-            </h1>
-            <p>
-              Every kind of a Work Sheet is to think <br /> about the morning
-              tonight. Every kind.
-            </p>
+            <div className="dwnldSctn">
+              <h1>
+                Your document <br /> is ready.
+              </h1>
+              <p>
+                Every kind of a Work Sheet is to think <br /> about the morning
+                tonight. Every kind.
+              </p>
+              <button className="dwnldBtn">Download document</button>
+            </div>
           </div>
         </>
       )}

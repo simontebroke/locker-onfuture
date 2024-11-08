@@ -178,6 +178,32 @@ body {
     margin-top: 16px;
   }
 
+  .dwnldBtn {
+    box-sizing: border-box;
+    background: linear-gradient(
+      270deg,
+      #c5c0fe 9.06%,
+      #a89afc 44.16%,
+      #5243fb 100%
+    );
+    border: none;
+    color: #fff;
+    width: 100%;
+    padding: 14px 0px;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 21.99px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    border-radius: 15px;
+    margin-top: 36px;
+  }
+  .dwnldSctn {
+    padding: 0px 20px;
+  }
+
   .previewSec {
     padding: 13px 16px;
     background-color: #f5f5f7;
