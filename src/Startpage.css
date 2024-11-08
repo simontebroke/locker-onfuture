@@ -107,4 +107,8 @@ body {
   text-underline-position: from-font;
   -webkit-text-decoration-skip-ink: none;
           text-decoration-skip-ink: none;
+  transition: all 250ms ease;
+}
+#genSection .convertButton.active {
+  background: radial-gradient(circle at 100% 0%, #ea994f 17.24%, #e46f90 32.29%, #cc6deb 50.99%, #65b9f9 74.38%);
 }/*# sourceMappingURL=Startpage.css.map */

@@ -35,8 +35,7 @@ function Startpage() {
         ...prevState,
         [key]: { name: file.name, isActive: true },
       }));
-    } else {
-      alert("Ungültiger Dateityp!");
+      setAllowConvert(true);
     }
   };
 
