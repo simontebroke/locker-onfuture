@@ -31,6 +31,7 @@ body {
   .slbCon {
     top: 242px;
     position: absolute;
+    margin-bottom: 23px;
   }
   .selectorsButton {
     border-radius: 15px;
@@ -99,7 +100,6 @@ body {
 }
 
 #genSection {
-  height: 75vh;
   .convertButton {
     position: fixed;
     display: flex;
@@ -145,8 +145,8 @@ body {
 .modal {
   position: fixed;
   bottom: 0;
+  top: 50px;
   left: 0;
-  height: 94vh;
   right: 0;
   background: #fff;
   border-radius: 12px 12px 0 0;

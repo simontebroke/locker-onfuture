@@ -30,6 +30,7 @@ body {
 #motSection .slbCon {
   top: 242px;
   position: absolute;
+  margin-bottom: 23px;
 }
 #motSection .selectorsButton {
   border-radius: 15px;
@@ -94,9 +95,6 @@ body {
   text-align: center;
 }
 
-#genSection {
-  height: 75vh;
-}
 #genSection .convertButton {
   position: fixed;
   display: flex;
@@ -137,8 +135,8 @@ body {
 .modal {
   position: fixed;
   bottom: 0;
+  top: 50px;
   left: 0;
-  height: 94vh;
   right: 0;
   background: #fff;
   border-radius: 12px 12px 0 0;
