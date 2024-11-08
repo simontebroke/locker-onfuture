@@ -83,6 +83,9 @@ body {
   text-align: center;
 }
 
+#genSection {
+  height: 80vh;
+}
 #genSection .convertButton {
   position: fixed;
   display: flex;
