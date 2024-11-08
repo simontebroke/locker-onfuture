@@ -5,6 +5,18 @@ function Startpage() {
   // allows the convert button to change his color
   const [allowConvert, setAllowConvert] = useState(false);
 
+  // pop up
+
+  const [showModal, setShowModal] = useState(false);
+
+  useEffect(() => {
+    document.body.style.overflow = showModal ? "hidden" : "auto";
+  }, [showModal]);
+
+  // pop up
+
+  // files
+
   const [uploadedFiles, setUploadedFiles] = useState({
     design: { name: null, isActive: false },
     summary: { name: null, isActive: false },
@@ -166,7 +178,12 @@ function Startpage() {
         </div>
       </section>
       <section id="genSection">
-        <button className={`convertButton ${allowConvert ? "active" : ""}`}>
+        <button
+          onClick={() => {
+            allowConvert ? setShowModal(true) : "";
+          }}
+          className={`convertButton ${allowConvert ? "active" : ""}`}
+        >
           <svg
             width="18"
             height="18"
@@ -195,6 +212,51 @@ function Startpage() {
           {""} Transform now...
         </button>
       </section>
+
+      {showModal && (
+        <>
+          <div className="overlay" onClick={() => setShowModal(false)} />
+          <div className="modal">
+            <button
+              className="close-button"
+              onClick={() => setShowModal(false)}
+            >
+              <svg
+                width="30"
+                height="30"
+                viewBox="0 0 30 30"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="15"
+                  cy="15"
+                  r="15"
+                  fill="white"
+                  fill-opacity="0.86"
+                />
+                <path
+                  d="M19.375 19.375L10.625 10.625M19.375 10.625L10.625 19.375"
+                  stroke="#7F7C80"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+            <div className="previewSec"></div>
+            <p>EEE</p>
+            <p>EEE</p>
+            <p>EEE</p>
+            <p>EEE</p>
+            <p>EEE</p>
+            <p>EEE</p>
+            <p>EEE</p>
+            <p>EEE</p>
+            <p>EEE</p>
+          </div>
+        </>
+      )}
     </>
   );
 }
