@@ -217,43 +217,43 @@ function Startpage() {
         <>
           <div className="overlay" onClick={() => setShowModal(false)} />
           <div className="modal">
-            <button
-              className="close-button"
-              onClick={() => setShowModal(false)}
-            >
-              <svg
-                width="30"
-                height="30"
-                viewBox="0 0 30 30"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
+            <div className="previewSec">
+              <img src="/popupimg.png" alt="Preview" />
+              <button
+                className="close-button"
+                onClick={() => setShowModal(false)}
               >
-                <circle
-                  cx="15"
-                  cy="15"
-                  r="15"
-                  fill="white"
-                  fill-opacity="0.86"
-                />
-                <path
-                  d="M19.375 19.375L10.625 10.625M19.375 10.625L10.625 19.375"
-                  stroke="#7F7C80"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </button>
-            <div className="previewSec"></div>
-            <p>EEE</p>
-            <p>EEE</p>
-            <p>EEE</p>
-            <p>EEE</p>
-            <p>EEE</p>
-            <p>EEE</p>
-            <p>EEE</p>
-            <p>EEE</p>
-            <p>EEE</p>
+                <svg
+                  width="30"
+                  height="30"
+                  viewBox="0 0 30 30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle
+                    cx="15"
+                    cy="15"
+                    r="15"
+                    fill="white"
+                    fill-opacity="0.86"
+                  />
+                  <path
+                    d="M19.375 19.375L10.625 10.625M19.375 10.625L10.625 19.375"
+                    stroke="#7F7C80"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </div>
+            <h1>
+              Your document <br /> is ready.
+            </h1>
+            <p>
+              Every kind of a Work Sheet is to think <br /> about the morning
+              tonight. Every kind.
+            </p>
           </div>
         </>
       )}
